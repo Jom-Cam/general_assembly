@@ -1,6 +1,6 @@
 # Recipe App! Find your recipe today!
 
-![alt text](/assets/project2-img1.png)
+![alt text](./assets/project2-img1.png)
 This is the second project from my Software Engineering Immersive course and also the first pair coding project, this was a front end design project highlighting the use of React, Express and JSX.
 
 # Deployment 
@@ -29,18 +29,18 @@ We decided on a food related external API source as we found a user friendly and
 
 We planned out our website on Sigma and had a rough design. 
 
-![alt text](/assets/project2-img2.png)
+![alt text](./assets/project2-img2.png)
 
 2. Coding Back End - using Express to Request the data 
 We needed to be able to selectively pull only the recipe we needed from the API thus we needed to code in JavaScript a request that filters through the input text inside the search bar which is done via the handleSearch function. 
 
-![alt text](/assets/project2-img3.png)
+![alt text](./assets/project2-img3.png)
 
 3. Coding CSS Front End - CSS 
 We used React CSS Framework to help us out with the layout of the website as it has a lot of pre-built components that will help us out to save time. 
 We went with a clean user friendly layout, simple images and their names to highlight what the recipe is. 
 
-![alt text](/assets/project2-img4.png)
+![alt text](./assets/project2-img4.png)
 
 4. Debugging/Error Handling. 
 On the final day, we decided to focus on error handling and adding the loading spinner, both of us each trying to break the website in any way that we can in order to fix it and add the necessary boundaries in the code. 
@@ -49,7 +49,7 @@ One such error was writing numbers in the search bar which initially broke and c
 #  Featured Code 
 I wanted to highlight a piece of code that we worked on which was to enable the user to use the search function along with the filter function, this took a lot of work out as previously it only worked with one or the other. 
 
-![alt text](/assets/project2-img5.png)
+![alt text](./assets/project2-img5.png)
 
 This enabled our sumach to first filter through the filtered choice by running the catergoryFilter() function first which is then used inside the searchFilter() function afterwards. 
 

@@ -1,6 +1,6 @@
 # SpaceBook! Book your space travel today! 
 
-![alt text](/assets/project3-Img1.gif)
+![alt text](./assets/project3-Img1.gif)
 
 This is the third project from my Software Engineering Immersive Course and the first group coding project of I, Neil (https://github.com/neilmcfayden) and Thor (https://github.com/thor-r); this was a full stack project using React, Express, Node.js and MongoDB.
 
@@ -37,7 +37,7 @@ Timeframe: 8 days
 
 # Process 
 
-![alt text](/assets/project3-Img2.gif)
+![alt text](./assets/project3-Img2.gif)
 
 Day 1 
 
@@ -46,7 +46,7 @@ We also discussed how we were planning to schedule and meet up every morning. We
 
 We used Trello to keep track of our planning and what we were required to accomplish. 
 
-![alt text](/assets/project3-Img3.png)
+![alt text](./assets/project3-Img3.png)
 
 We then used Figma as a planning source to wire frame our website. 
 Each segment highlights a page that we wanted to have on our website. 
@@ -54,19 +54,19 @@ Each segment highlights a page that we wanted to have on our website.
 This showcases our plans for the main page; we wanted to have planets moving around in a carousel rotating in orbit to simulate space base websites.  
 This was planning on roughly how we wanted the main landing page to have a moving carousel, it would future planets moving in and out of the screen. 
 
-![alt text](/assets/project3-Img4.png)
+![alt text](./assets/project3-Img4.png)
 
 We wanted to have an on hover effect that will provide a brief detail about the planet. 
-![alt text](/assets/project3-Img5.png)
+![alt text](./assets/project3-Img5.png)
 
 The Offers page was just generating offers as any good travel website should have. 
-![alt text](/assets/project3-Img6.png)
+![alt text](./assets/project3-Img6.png)
 
 We planned out that the user will require Login and Register Functionality, with a milestone goal of adding a remember me function button if we had the time. 
-![alt text](/assets/project3-Img7.png)
+![alt text](./assets/project3-Img7.png)
 
 Each planet would have its own overview page highlighting details such as time of travel, size of planet and its highlighted activity and reviews provided by previous customers. 
-![alt text](/assets/project3-Img8.png)
+![alt text](./assets/project3-Img8.png)
 
 Day 2-4
 
@@ -74,7 +74,7 @@ We then used Days 2-4 to focus on our back end.
 I was in charge of the profile page and review functionality. 
 I first created a Review Schema and required it to be a virtual field in relation to a planet. 
 
-![alt text](/assets/project3-Img9.png)
+![alt text](./assets/project3-Img9.png)
 
 The tricky part of the code was to get the functionality of the virtual field, this enabled me to link the review and directly attach it to my User Schema giving it an array of reviews. This comes in handy later when populating the field to then attach the information to the front end portion of the website. 
 
@@ -83,17 +83,17 @@ I then had to create post and delete pathways in the back end for mongoDB to req
 The ‘postReview’ enabled the front end to submit and post a review so that it can be converted and saved into the back end API as data to be used and recalled where it is required. 
 With the same premise ‘deleteReview’ enabled the user to delete the review from the API with the added security of authorisation verifying that the user was the one that created the review before being able to fully delete the review. 
 
-![alt text](/assets/project3-Img10.png)
+![alt text](./assets/project3-Img10.png)
 
 The next 2 code snippets show how each review connects to 2 different sections of the App, the User Schema and the Planet Schema. 
 The ‘.populate’ on the ‘getProfile’ and ‘getPlanets’ is required to request the correct format of data from the API source to be used for the front end. 
 
-![alt text](/assets/project3-Img11.png)
-![alt text](/assets/project3-Img12.png)
+![alt text](./assets/project3-Img11.png)
+![alt text](./assets/project3-Img12.png)
 
 Finally, the routes needed to be added for the connection of front end and back end to be complete; this enables the front end to request the methodology required for the website. 
 
-![alt text](/assets/project3-Img13.png)
+![alt text](./assets/project3-Img13.png)
 
 Day 5-7
 
@@ -102,27 +102,27 @@ As with the back end, I was in charge of the profile and offers page.
 I needed to design a front end that checked if there was a review from the profile first. 
 To do that, I used Express Axios to pull the profile information from our back end using the code below. 
 
-![alt text](/assets/project3-Img14.png)
+![alt text](./assets/project3-Img14.png)
 
 This lets me gather the information about the profile user and check if they have any reviews associated with their account. 
 If they did not have any reviews, the page will show as below. 
 
-![alt text](/assets/project3-Img15.png)
+![alt text](./assets/project3-Img15.png)
 
 Otherwise using the conditional rendering, it will add reviews inside the reviews section of the profile page. 
 
-![alt text](/assets/project3-Img16.png)
+![alt text](./assets/project3-Img16.png)
 
 If the Profile has reviews, it will show as below. 
-![alt text](/assets/project3-Img17.png)
+![alt text](./assets/project3-Img17.png)
 
 I added a “jump to review” button as a functionality for ease of use for the client so that they can check out the planet on which they have previously left a comment on. This was done via React’s link and the correct planet id. 
-![alt text](/assets/project3-Img18.png)
-![alt text](/assets/project3-Img19.png)
+![alt text](./assets/project3-Img18.png)
+![alt text](./assets/project3-Img19.png)
 
 The offers page is just a standard express axios request pulling the offer from each planet and placing them inside a React carousel. 
 
-![alt text](/assets/project3-Img20.png)
+![alt text](./assets/project3-Img20.png)
 
 Day 8 
 

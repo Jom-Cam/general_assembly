@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Nunito:wght@300&family=Shizuru&display=swap');
+* {
+  font-family: MedievalSharp, Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+body{
+  border-radius: 20px;
+  display: grid;
+  background-image: url("../backgrounds/gameBackground.jpeg");
+}
+
+.mainGame {
+  background-image: url('../backgrounds/innerGameBackground.jpeg');
+  display: grid;
+  grid: 1fr / 1fr 1fr ;
+  border-radius: 20px;
+}
+
+
+
+h1 {
+  border: 5px solid rgb(72, 46, 46);
+  padding: 5px;
+  color: yellow;
+  font-family: MedievalSharp ;
+  border-radius: 20px;
+  background-image: url('../backgrounds/headerBackground.jpeg');
+}
+
+#gameContainer {
+  border-radius: 20px;
+  display: grid;
+  background-image: url('../backgrounds/mainGameBackground.jpeg');
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.adventuringMenu {
+  color: yellow;
+}
+
+#myBtn {
+  margin-top: -30px;
+}
+
+.mute{
+  margin: 10px;
+  color: yellow;
+}
+
+label {
+  font-size: 20px;
+  margin: 20px;
+  color: yellow;
+}
+
+.gridContainer {
+  display: grid;
+  /* grid size needs to change as per selected arguement */ 
+  /* grid size = diffuclty level */ 
+  grid: 1fr / 4fr 1fr;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+#cellContainerLeft {
+  display: grid;
+  grid-auto-flow: dense;
+  grid: 1fr/ 1fr 1fr 1fr 1fr;
+}
+
+#cellContainerRight {
+  grid-auto-flow: dense;
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+}
+
+.outerlines1 {
+  display: grid;
+  grid: 1fr / 5fr 1fr;
+  border: red solid 5px;
+}
+
+.fellowshipChosen{
+
+  border: solid 5px;
+}
+
+.lines {
+  display: grid;
+  /* grid size needs to change as per selected arguement */ 
+  /* grid size = diffuclty level */ 
+  grid: 1fr / 1fr 1fr 1fr 1fr;
+  border: 5px solid gray
+}
+
+.hiddenLines {
+  display: grid;
+  /* grid size needs to change as per selected arguement*/
+  /* grid size = diffuclty level */  
+  grid: 1fr / 1fr 1fr 1fr 1fr;
+  background-image: url('../backgrounds/hiddenBackground.jpeg');
+  background-position: center;
+  border: 8px solid gray;
+  border-radius: 20px;
+}
+
+.preview {
+  display: grid;
+  /* grid size needs to change as per selected arguement*/
+  /* grid size = diffuclty level */  
+  grid: 1fr / 1fr 1fr 1fr 1fr;
+  border: 5px solid gray;
+  border-radius: 20px;
+  background-image: url('../backgrounds/previewBackground.jpeg');
+  background-position: center;
+}
+
+.results{
+  display: grid;
+  /* grid size needs to change as per selected arguement*/ 
+  grid: 1fr 1fr / 1fr 1fr;
+}
+
+.indicator{
+  display: flex;
+  align-items: center;
+  width: 1fr;
+  border-radius: 10px;
+}
+
+#menuOption{
+  border: 5px solid rgb(72, 46, 46);
+  border-radius: 20px;
+  background-image: url('../backgrounds/menuOptionsBackground.jpeg');
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+}
+#addMenu {
+  border: 5px solid rgb(72, 46, 46);
+  margin: 5px;
+  padding: 10px;
+  color: yellow;
+  border-radius: 20px;
+  background-image: url('../backgrounds/menuOptionsBackground.jpeg');
+}
+
+.fellowshipMenu{
+  margin-top: -3px;
+}
+
+.container {
+  border: 5px solid yellow
+}
+
+.fellowshipContainer {
+  display: grid;
+  /* grid size needs to change as per selected arguement*/ 
+  grid: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  background-image: url("../backgrounds/chosenBackground.png");
+  width: auto;
+  height: 250px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.fellowship {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  color: yellow;
+  font-size: 25px;
+  background-repeat: no-repeat;
+  background-position:50% -3px; 
+  border-radius: 20px;
+}
+
+.fellowship:hover {
+  cursor: pointer ;
+}
+
+button:hover {
+  cursor: pointer ;
+}
+
+.indicator img {
+  height: 40px;
+}
+
+#frodo {
+  background-image: url('../Pixel Fellowship/frodoPixel.png');
+  background-repeat: no-repeat;
+  background-position:50% -3px; 
+}
+
+#sam {
+  background-image: url('../Pixel Fellowship/samPixel.png');
+}
+
+#merry{
+  background-image: url('../Pixel Fellowship/merryPixel.png');
+}
+
+#pippin{
+  background-image: url('../Pixel Fellowship/pippinPixel.png');
+}
+
+#aragorn{
+  background-image: url('../Pixel Fellowship/aragornPixel.png');
+}
+
+#legolas{
+  background-image: url('../Pixel Fellowship/legolasPixel.png');
+}
+
+#gimli{
+  background-image: url('../Pixel Fellowship/gimliPixel.png');
+}
+
+#boramir{
+  background-image: url('../Pixel Fellowship/boramirPixel.png');
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 20px;
+  background-image: url('../backgrounds/modalBackground.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 35px;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

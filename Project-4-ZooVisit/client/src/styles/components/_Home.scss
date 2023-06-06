@@ -1,0 +1,63 @@
+.animalContainers {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 0, 1) ;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.allAnimalContainer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+}
+.animal-div{
+    h1 {
+        font-size: 100px;
+        margin: 1px;
+    }
+    p {
+        font-size: 20px;
+    }
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.animalHome {
+    display: flex;
+    background-image: url("https://thumbs.dreamstime.com/b/jungle-zoo-themed-animal-background-field-fresh-green-grass-palm-flower-blue-sky-stars-110583133.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+#reviewForm{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    #review-text{
+        margin: 20px;
+    }
+
+}

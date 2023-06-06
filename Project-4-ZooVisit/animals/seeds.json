@@ -1,0 +1,106 @@
+[
+{
+  "model": "animals.animal",
+  "pk": 1,
+  "fields": {
+    "name": "scoob",
+    "type": "Dog",
+    "species": "Great Dane",
+    "sound": "Rooby Dooby Doo!",
+    "image": "🐕",
+    "sound_url": "woof.mp4",
+    "biome":"city"
+  }
+},
+{
+  "model": "animals.animal",
+  "pk": 2,
+  "fields": {
+    "name": "George",
+    "type": "Monkey",
+    "species": "chimpanzee",
+    "sound": "ooo aaa ooo",
+    "image": "🐒",
+    "sound_url": "monkey.mp4",
+    "biome":"jungle"
+  }
+},
+{
+    "model": "animals.animal",
+    "pk": 3,
+    "fields": {
+      "name": "Mr.Fox",
+      "type": "Fox",
+      "species": "Red Fox",
+      "sound": "what does the fox say?",
+      "image": "🦊",
+      "sound_url": "fox.mp4",
+      "biome":"city"
+    }
+  },
+{
+    "model": "animals.animal",
+    "pk": 4,
+    "fields": {
+      "name": "Garfield",
+      "type": "Cat",
+      "species": "Tabby Cat",
+      "sound": "I hate Mondays",
+      "image": "🐈",
+      "sound_url": "cat.mp4",
+      "biome":"city"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 5,
+    "fields": {
+      "name": "Willy",
+      "type": "Dolphin",
+      "species": "Killer Whale",
+      "sound": "Free Me!",
+      "image": "🐬",
+      "sound_url": "whale.mp4",
+      "biome":"ocean"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 6,
+    "fields": {
+      "name": "Bruce",
+      "type": "Shark",
+      "species": "Great White Shark",
+      "sound": "Fish are friends not food!",
+      "image": "🦈",
+      "sound_url": "shark.mp4",
+      "biome":"ocean"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 7,
+    "fields": {
+      "name": "Sir Hiss",
+      "type": "Snake",
+      "species": "Garter Snake",
+      "sound": "Fish are friends not food!",
+      "image": "🐍",
+      "sound_url": "shark.mp4",
+      "biome":"jungle"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 8,
+    "fields": {
+      "name": "Mr Wolf",
+      "type": "wolf",
+      "species": "Grey Wolf",
+      "sound": "Awooooo!",
+      "image": "🐺",
+      "sound_url": "wolf.mp4",
+      "biome":"forest"
+    }
+  }
+]

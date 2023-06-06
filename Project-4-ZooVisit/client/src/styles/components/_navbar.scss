@@ -1,0 +1,27 @@
+.nav-style {
+  display: grid;
+  grid-template-columns: 14fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 60px;
+  background-color: #FFDB58;
+  border: solid 5px black;
+  font-size: 28px;
+
+  .btn-nav{
+      background-color: rgba(196, 196, 196, 1);
+      padding: 6px;
+      border: solid 5px black;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+
+  #zoo-logo{
+      max-height: 60px;
+  }
+
+
+}
+

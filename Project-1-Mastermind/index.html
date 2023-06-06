@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Mastermind!</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="js/app.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+  <h1>
+    Assemble Your Fellowship! <br>
+    Make it to Mount Doom Before its too Late!
+  </h1>
+
+  <div class='mainGame'>
+
+    <div id='gameContainer'>
+
+
+
+      <div class='hiddenLines' id='hidden'>
+        <div class='fellowshipHidden'> <img src="Pixel Fellowship/emptyPixel.png"> </div>
+        <div class='fellowshipHidden'> <img src="Pixel Fellowship/emptyPixel.png"></div>
+        <div class='fellowshipHidden'> <img src="Pixel Fellowship/emptyPixel.png"></div>
+        <div class='fellowshipHidden'> <img src="Pixel Fellowship/emptyPixel.png"> </div>
+      </div>
+
+
+
+      <div class='gridContainer'>
+
+      </div>
+
+    </div>
+
+    <div class='rightSide'>
+      <div class='menu'>
+
+        <div id='menuOption'>
+          <h2 class = 'adventuringMenu'> Adventuring Menu </h2>
+
+          <button id="myBtn"> How to Play </button>
+
+          <div id="myModal" class="modal">
+
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p> 
+
+                The Wise Wizard Gandalf has set you out on a task to get the ring to Mount Doom. <br>
+                You must find the correct character in the right order to get you through the perelous journey. <br>
+                <br>
+
+                Playing:  <br>
+                1. Press 'Start A New Game' <br>
+                2. Choose the characters you think should go on the journey by clicking on them. <br>
+                3. Once 4 characters are selected you must press the 'Submit' button. <br>
+                4. The wise Wizard will let you know if you have chosen wisely <br>
+                5. 'Gandalf the Grey' will show if you have the correct character but is not in the correct spot. <br>
+                6. 'Gandalf the White' will show himself if you have the correct character in the Correct spot. <br>  
+                7. You have 10 Attempts before the rings falls to the hands of the Witch King! <br>
+                <br>
+
+                Setting up Player vs Player <br>
+                1. Player 1 sets up the character they want in the order they want shown in preview bar. <br>
+                2. Player 1 then changes the opponent tab to Player vs Player then hits the Clear All Button <br>
+                3. Player 2 now has to find the character required to get to Mount Doom. <br> <br>
+                Good Luck Heroes! <br>
+                and Remember, Fly you Fools!!
+              
+              </p>
+            </div>
+          
+          </div>
+    
+
+          <br>
+
+          <label class='competition' for='competition'> Opponent </label>
+
+          <select name='competition' id='competition'>
+            <option value=pve> Player vs AI </option>
+            <option value=pvp> Player vs Player </option>
+          </select>
+
+          <br>
+
+          <div class='mute'>
+            <input type='checkbox' id='mute' name='mute'>
+            <label for='mute'> Mute the Adventurers! </label>
+          </div>
+
+
+
+        </div>
+
+        <div id='addMenu'>
+
+          <h2 class='fellowshipMenu'> Fellowship Menu </h2>
+
+          <div class='repeat'>
+            <input type='checkbox' id='repeat' name='repeat'>
+            <label for='repeat'> Repeated Fellowship (Under Construction) </label>
+          </div>
+
+          <!-- <label for = 'codeLength'> Group Size </label>
+
+        <select name = 'codeLength' id = 'codeLength'>
+          <option value = 4 > 4 </option>
+          <option value = 6 > 6 </option>
+          <option value = 8 > 8 </option>
+        </select> -->
+
+        </div>
+
+        <div class='preview'>
+          <div class='fellowshipPreview' id='preview0'> <img src="Pixel Fellowship/emptyPixel.png"> </div>
+          <div class='fellowshipPreview' id='preview1'> <img src="Pixel Fellowship/emptyPixel.png"></div>
+          <div class='fellowshipPreview' id='preview2'> <img src="Pixel Fellowship/emptyPixel.png"></div>
+          <div class='fellowshipPreview' id='preview3'> <img src="Pixel Fellowship/emptyPixel.png"> </div>
+        </div>
+
+      </div>
+
+      <div class='fellowshipContainer'>
+        <div class='fellowship' id='frodo' value='frodo'> Frodo <audio id='frodo' src='Pixel Sound/frodoSound.mp3'>
+          </audio></div>
+        <div class='fellowship' id='sam' value='sam'> Sam <audio id='sam' src='Pixel Sound/samSound.mp3'> </audio></div>
+        <div class='fellowship' id='merry' value='merry'> Merry <audio id='merry' src='Pixel Sound/merrySound.mp3'>
+          </audio></div>
+        <div class='fellowship' id='pippin' value='pippin'> Pippin <audio id='pippin' src='Pixel Sound/pippinSound.mp3'>
+          </audio></div>
+        <div class='fellowship' id='aragorn' value='aragorn'> Aragorn <audio id='aragorn'
+            src='Pixel Sound/aragornSound.mp3'> </audio> </div>
+        <div class='fellowship' id='legolas' value='legolas'> Legolas <audio id='legolas'
+            src='Pixel Sound/legolasSound.mp3'> </audio></div>
+        <div class='fellowship' id='gimli' value='gimli'> Gimli <audio id='gimli' src='Pixel Sound/gimliSound.mp3'>
+          </audio></div>
+        <div class='fellowship' id='boramir' value='boramir'> Boramir <audio id='boramir'
+            src='Pixel Sound/boramirSound.mp3'> </audio></div>
+
+      </div>
+
+      <button id='submit'>
+        Submit
+      </button>
+
+      <button id='clearAll'>
+        Clear All
+      </button>
+
+      <button id='clearLast'>
+        Clear Last
+      </button>
+
+      <br>
+
+      <button id='newGame'>
+        Start A New Game
+      </button>
+
+      <audio class='audio' id='backgroundMusic' src="Pixel Sound/theFellowShop8Bit.mp3">
+
+      </audio>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

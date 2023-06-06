@@ -1,0 +1,21 @@
+
+    .animal-details{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        background-color: rgba(196, 196, 196, 1) ;
+        width: 95%;
+        font-size: 40px;
+    }
+
+    #animal_name{
+        font-size: 50px;
+    }
+
+    #animal-avatar {
+        font-size: 150px;
+    }
+
+    #info {
+        margin: 10px;
+    }

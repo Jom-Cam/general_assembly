@@ -28,11 +28,11 @@ Day 1
 Planning - Design, MVP & Features
 I planned using the brief given and highlighted the core MVP of my game with bonuses as milestones. 
 
-![alt text](/assets/project1-img2.png)
+![alt text](./assets/project1-img2.png)
 
 I then planned out the layout of the game on the browser and a rough outline where each component will go. 
 
-![alt text](/assets/project1-img3.png)
+![alt text](./assets/project1-img3.png)
 
 Day 2
 Coding Front first - HTML Boxes 
@@ -48,7 +48,7 @@ By the end of day 3, I had created a generating grid along with the ability for 
 On day 4, I managed to get the core logic of the game working but was having an issue in regards to the front end interaction once a character has been chosen. 
 I made a function that highlighted which character was chosen and called it as imageChange() shown below.
 
-![alt text](/assets/project1-img4.png)
+![alt text](./assets/project1-img4.png)
 
 This lets me call the function wherever necessary when a character is chosen to revert back to the blank after the submit is clicked. 
 
@@ -56,7 +56,7 @@ The core functionality in essence was simple as you had to compare 2 arrays betw
 The issue came when comparing the location of each character as I needed to use each character’s index location and also compare that. 
 I then had to ensure that the character chosen was not already repeated in comparison so the order in which the indicator read the code was vital to the game. 
 
-![alt text](/assets/project1-img5.png)
+![alt text](./assets/project1-img5.png)
 
 This was the code I ended up with as it first went through the hidden character list and the chosen character list and established if any of them are the same and in the correct location if so they were removed from the array and enabled the comparison to carry on. 
 The second part was checking if any character chosen were present in the secret code but not in the correct location.

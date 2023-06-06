@@ -1,6 +1,6 @@
 # Mastermind! Make it to Mordor! 
 
-![alt text](/assets/project1-img1.png)
+![alt text](./assets/project1-img1.png)
 
 This is the first project from my Software Engineering Immersive course; this was a full stack solo project highlighting the use of HTML, CSS and JavaScript.
 
